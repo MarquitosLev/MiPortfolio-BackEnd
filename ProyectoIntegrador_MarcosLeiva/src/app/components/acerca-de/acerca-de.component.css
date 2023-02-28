@@ -1,0 +1,38 @@
+.row{
+    width: 100%;
+}
+#nombre_titulo{
+    padding-top: 110px;
+}
+
+div{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    #foto_perfil{        
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(63, 63, 63);
+        left: 3%;
+        top: 650px;
+    }
+}
+
+@media (max-width: 575px) {
+    #foto_perfil{        
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(63, 63, 63);
+        left: 45%;
+    }
+}
+
+#acerca{
+    padding-top: 55px;
+    padding-right: 10px;
+}
