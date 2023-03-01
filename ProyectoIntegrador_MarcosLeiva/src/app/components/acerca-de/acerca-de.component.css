@@ -1,38 +1,41 @@
-.row{
-    width: 100%;
-}
-#nombre_titulo{
-    padding-top: 110px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 div{
-    background-color: black;
     text-align: center;
+    background-color: black;
     color: white;
 }
 
 @media (min-width: 576px) {
-    #foto_perfil{        
-        position: absolute;
+    #foto_perfil{  
+        position: absolute;      
         width: 15%;
+        left: 7%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px rgb(63, 63, 63);
-        left: 3%;
-        top: 650px;
+        margin-top: 40px
+        ;
+        
+    }
+    #acerca{
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 575px) {
     #foto_perfil{        
         position: absolute;
-        width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px rgb(63, 63, 63);
-        left: 45%;
+        box-shadow: 3px 3px 3px rgb(63 63 63);
+        width: 25%;
+        left: 38%;
+        margin-top: 30px;
     }
-}
-
-#acerca{
-    padding-top: 55px;
-    padding-right: 10px;
+    #acerca{
+        margin-top: 140px;
+    }
 }
