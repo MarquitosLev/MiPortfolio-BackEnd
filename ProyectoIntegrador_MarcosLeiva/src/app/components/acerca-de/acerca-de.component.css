@@ -8,21 +8,19 @@ div{
     text-align: center;
     background-color: black;
     color: white;
+    padding: 25px;
 }
 
 @media (min-width: 576px) {
     #foto_perfil{  
         position: absolute;      
-        width: 15%;
-        left: 7%;
+        width: 170px;
+        left: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px rgb(63, 63, 63);
-        margin-top: 40px
-        ;
-        
+        box-shadow: 3px 3px 3px rgb(63, 63, 63);       
     }
     #acerca{
-        margin-top: 40px;
+        padding-bottom: 35px;
     }
 }
 
