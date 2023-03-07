@@ -7,10 +7,10 @@ div{
     background-color: black;
     color: white;
 }
+.row{
+    padding: 25px;
+}
 h1{
     text-align: center;
-    padding: 20px;
-}
-.row{
-    padding-bottom: 15px;
+    padding: 10px;
 }
