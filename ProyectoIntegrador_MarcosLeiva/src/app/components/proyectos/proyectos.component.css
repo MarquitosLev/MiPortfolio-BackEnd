@@ -28,3 +28,8 @@
 .titu{
     padding: 20px;
 }
+@media (max-width: 750px) {
+    .img-proy{
+        margin-left: 0 ;
+    }
+}
