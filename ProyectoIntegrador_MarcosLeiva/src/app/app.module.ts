@@ -11,6 +11,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardysoftComponent } from './components/hardysoft/hardysoft.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HardysoftComponent } from './components/hardysoft/hardysoft.component';
     BannerComponent,
     AcercaDeComponent,
     EducacionComponent,
-    HardysoftComponent
+    HardysoftComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
