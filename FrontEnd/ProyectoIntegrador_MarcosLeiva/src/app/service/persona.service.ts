@@ -8,12 +8,12 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   // Base del url para luego concatenarlo 
-  URL = 'http://localhost:8080/personas/'
+  URL = 'http://localhost:8080/'
 
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona> {
     // Obtiene la persona utilizando la url programada anteriormente
-    return this.http.get<persona>(this.URL+'traer/persona');
+    return this.http.get<persona>(this.URL+'personas/find');
   }
 }
