@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-social',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.css']
 })
 export class SocialComponent {
+  constructor(private router: Router){}
 
+  login(){
+    this.router.navigate(['/login']);
+  }
 }
