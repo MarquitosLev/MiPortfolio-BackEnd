@@ -1,4 +1,4 @@
-package com.mjlportfolio.mjl;
+package com.mjlPortfolio.mjl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

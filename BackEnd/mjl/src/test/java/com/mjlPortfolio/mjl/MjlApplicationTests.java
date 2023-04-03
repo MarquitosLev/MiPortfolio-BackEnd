@@ -1,4 +1,4 @@
-package com.mjlportfolio.mjl;
+package com.mjlPortfolio.mjl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
