@@ -1,44 +1,59 @@
 <!-- Menu login de Bootstrap -->
 <div class="bg-dark d-flex justify-content-center align-items-center vh-100">
-  <div
-    class="bg-primary p-5 rounded-5 text-secondary shadow"
-    style="width: 25rem"
-  > 
-    <div class="text-white text-center fs-1 fw-bold">Login</div>
-    <div class="input-group mt-4">
-      <div class="input-group-text bg-info"></div>
-      <input class="form-control bg-light" type="text" placeholder="Usuario" />
-    </div>
-    <div class="input-group mt-1">
-      <div class="input-group-text bg-info"></div>
-      <input
-        class="form-control bg-light"
-        type="password"
-        placeholder="Contraseña"
-      />
-    </div>
-    <div class="d-flex justify-content-around mt-1">
-      <div class="d-flex align-items-center gap-1">
-        <input class="form-check-input" type="checkbox" />
-        <div class="text-white pt-1" style="font-size: 0.9rem">Remember me</div>
+  <form [formGroup]="form">
+    <div
+      class="bg-primary p-5 rounded-5 text-secondary shadow"
+      style="width: 25rem"
+    >
+      <div class="text-white text-center fs-1 fw-bold">Login</div>
+      <div class="input-group mt-4">
+        <div class="input-group-text bg-info"></div>
+        <input
+          class="form-control bg-light"
+          formControlName="email"
+          type="email"
+          placeholder="Usuario"
+        />
       </div>
-      <div class="pt-1">
-        <a
-          href="#"
-          class="text-decoration-none text-info fw-semibold fst-italic"
-          style="font-size: 0.9rem"
-          >Forgot your password?</a
+
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="text-black  ">
+          El email es requerido.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="text-black">
+          El email debe ser válido.
+        </p>
+      </div>
+
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-info"></div>
+        <input
+          class="form-control bg-light"
+          formControlName="password"
+          type="password"
+          placeholder="Contraseña"
+        />
+      </div>
+
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text-black">
+          La Contraseña es requerida.
+        </p>
+        <!-- Controlar luego -->
+        <p *ngIf="Password?.hasError('password')" class="text-black">
+          La Contraseña debe ser válida.
+        </p>
+      </div>
+
+      <div class="btn btn-info text-white w-100 mt-3 fw-semibold shadow-sm">
+        Login
+      </div>
+      <div class="text-white d-flex gap-1 justify-content-center mt-3">
+        <div>Don't have an account?</div>
+        <a href="#" class="text-decoration-none text-info fw-semibold"
+          >Register</a
         >
       </div>
     </div>
-    <div class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
-      Login
-    </div>
-    <div class="text-white d-flex gap-1 justify-content-center mt-1">
-      <div>Don't have an account?</div>
-      <a href="#" class="text-decoration-none text-info fw-semibold"
-        >Register</a
-      >
-    </div>
-  </div>
+  </form>
 </div>
