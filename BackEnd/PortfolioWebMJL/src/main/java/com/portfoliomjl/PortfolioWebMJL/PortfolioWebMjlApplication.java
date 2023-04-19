@@ -1,13 +1,13 @@
-package com.portfolio_mjl.mjl;
+package com.portfoliomjl.PortfolioWebMJL;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MjlApplication {
+public class PortfolioWebMjlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MjlApplication.class, args);
+		SpringApplication.run(PortfolioWebMjlApplication.class, args);
 	}
 
 }
