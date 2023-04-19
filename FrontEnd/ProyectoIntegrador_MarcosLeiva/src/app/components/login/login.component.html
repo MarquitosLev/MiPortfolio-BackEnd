@@ -1,59 +1,57 @@
-<!-- Menu login de Bootstrap -->
-<div class="bg-dark d-flex justify-content-center align-items-center vh-100">
-  <form [formGroup]="form">
-    <div
-      class="bg-primary p-5 rounded-5 text-secondary shadow"
-      style="width: 25rem"
-    >
-      <div class="text-white text-center fs-1 fw-bold">Login</div>
-      <div class="input-group mt-4">
-        <div class="input-group-text bg-info"></div>
-        <input
-          class="form-control bg-light"
-          formControlName="email"
-          type="email"
-          placeholder="Usuario"
-        />
-      </div>
+<section class="vh-100 gradient-custom">
+  <div class="container py-2 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem">
+          <div class="card-body p-5 text-center">
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">
+                Por favor, ingresar usuario y clave
+              </p>
 
-      <div *ngIf="Email?.errors && Email?.touched">
-        <p *ngIf="Email?.hasError('required')" class="text-black  ">
-          El email es requerido.
-        </p>
-        <p *ngIf="Email?.hasError('email')" class="text-black">
-          El email debe ser válido.
-        </p>
-      </div>
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="nombreUsuario"
+                    name="nombreUsuario"
+                    class="form-control form-control-lg"
+                    [(ngModel)]="nombreUsuario"
+                    required
+                  />
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
 
-      <div class="input-group mt-1">
-        <div class="input-group-text bg-info"></div>
-        <input
-          class="form-control bg-light"
-          formControlName="password"
-          type="password"
-          placeholder="Contraseña"
-        />
-      </div>
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control form-control-lg"
+                    [(ngModel)]="password"
+                    required
+                  />
+                  <label class="form-label" for="password">Password</label>
+                </div>
 
-      <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text-black">
-          La Contraseña es requerida.
-        </p>
-        <!-- Controlar luego -->
-        <p *ngIf="Password?.hasError('password')" class="text-black">
-          La Contraseña debe ser válida.
-        </p>
-      </div>
+                <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
 
-      <div class="btn btn-info text-white w-100 mt-3 fw-semibold shadow-sm">
-        Login
-      </div>
-      <div class="text-white d-flex gap-1 justify-content-center mt-3">
-        <div>Don't have an account?</div>
-        <a href="#" class="text-decoration-none text-info fw-semibold"
-          >Register</a
-        >
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">
+                  Login
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <p class="mb-0">
+                ¿No tienes una cuenta?
+                <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </form>
-</div>
+  </div>
+</section>
