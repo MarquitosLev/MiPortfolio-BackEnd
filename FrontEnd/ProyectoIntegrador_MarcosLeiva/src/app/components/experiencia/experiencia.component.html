@@ -1,5 +1,6 @@
 <div class="p-5 row">
-  <h1 class=" p-3 text-center">Experiencia Laboral</h1>
+  <!-- El titulo solo se mostrará si hay alguna experiencia escrita o si esta logueado -->
+  <h1 class=" p-3 text-center" *ngIf="expe.length > 0 || isLogged">Experiencia Laboral</h1>
 
   <div class="text-center p-2">
     <button
