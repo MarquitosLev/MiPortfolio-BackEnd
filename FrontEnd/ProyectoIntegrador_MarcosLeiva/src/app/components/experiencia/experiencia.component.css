@@ -3,14 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.row{
-    padding: 20px;
+div{
     background-color: black;
     color: white;
-}
-
-@media (max-width: 750px) {
-    .img-proy{
-        margin-left: 0 ;
-    }
 }
