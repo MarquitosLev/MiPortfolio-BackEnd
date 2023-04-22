@@ -1,40 +1,46 @@
-<div class="row">
-  <h1><strong>Formación Académica</strong></h1>
-  <ul class="col-lg-1"></ul>
-  <ul class="list-group list-group-flush col-lg-10">
-    <li
-      class="list-group-item d-flex justify-content-between align-items-center bg-black text-light"
+<div class="p-5 row">
+  <h1 class=" p-3 text-center" *ngIf="educ.length > 0 || isLogged">Educación</h1>
+
+  <div class="text-center p-2">
+    <button
+      type="button"
+      class="btn btn-secondary p-1"
+      routerLink="/newedu"
+      *ngIf="isLogged"
     >
-      <h2 class="p-4 col-lg-3">Educación Secundaria</h2>
-      <p class="col-lg-9">
-        Completé mi educación secundaria en la institución N° 16 "Prof. Gerardo
-        Victorin", Ex Comercio 1, donde me gradué en el año 2020 con el título
-        de "Bachiller con orientación en Ciencias Naturales".
-      </p>
-    </li>
-    <li
-      class="list-group-item d-flex justify-content-between align-items-center bg-black text-light"
-    >
-      <h2 class="p-4 col-lg-3">Estudios Universitarios</h2>
-      <p class="col-lg-9">
-        En el año 2021 me inscribí en la carrera de "Licenciatura en Sistemas"
-        que se imparte en la Facultad de Ciencias de la Administración de la
-        Universidad de Entre Ríos. En la actualidad, me encuentro cursando el
-        tercer año de la carrera.
-      </p>
-    </li>
-    <li
-      class="list-group-item d-flex justify-content-between align-items-center bg-black text-light"
-    >
-      <h2 class="p-4 col-lg-3">Formación Adicional</h2>
-      <p class="col-lg-9">
-        <!-- INGRESAR EL LINK DEL CERTIFICADO -->
-        He participado en cursos de reparación de computadoras brindados por la
-        "Comunidad Reparando". En caso de que desee revisar el certificado
-        correspondiente, por favor, haga clic en el siguiente
-        <a href="">enlace</a>.
-      </p>
-    </li>
-  </ul>
-  <ul class="col-lg-1"></ul>
+      Nueva Educación
+    </button>
+  </div>
+
+  <div class="p-2 col-lg-12 col-sm-12">
+    <table class="table">
+      <tbody>
+        <!-- Recorrido de todas las educaciones existentes -->
+        <tr *ngFor="let Educacion of educ">
+          <td>
+            <h2 class="text-light p-2 ">{{Educacion.nombreE}}</h2>
+          </td>
+
+          <td class="text-light p-2 pt-3 col-lg-6 ">{{ Educacion.descripcionE }}</td>
+
+          <td *ngIf="isLogged" class="text-center pt-4 col-lg-1">
+            <!-- Boton para editar Educacion -->
+            <button
+              class="btn btn-light"
+              routerLink="/editedu/{{Educacion.id}}"
+            >
+              <i class="p-3 bi bi-pencil-fill "></i>
+            </button>
+          </td>
+
+          <td *ngIf="isLogged" class="text-center pt-4 col-lg-1">
+            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+              <i class="bi bi-trash-fill p-3"></i>
+            </button>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
