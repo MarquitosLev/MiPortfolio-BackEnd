@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-integrador-marcos-leiva",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
