@@ -6,6 +6,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExpeComponent } from './components/experiencia/edit-expe.component';
 import { NeweducComponent } from './components/educacion/neweduc.component';
 import { EditeducComponent } from './components/educacion/editeduc.component';
+import { NewhardysoftComponent } from './components/hardysoft/newhardysoft.component';
+import { EdithardysoftComponent } from './components/hardysoft/edithardysoft.component';
 
 const routes: Routes = [
   // Paths para login y pantalla principal
@@ -14,7 +16,9 @@ const routes: Routes = [
   {path: 'nuevaexp', component: NewExperienciaComponent},
   {path: 'editexp/:id', component: EditExpeComponent},
   {path: 'newedu', component: NeweducComponent},
-  {path: 'editedu/:id', component: EditeducComponent}
+  {path: 'editedu/:id', component: EditeducComponent},
+  {path: 'newhys', component: NewhardysoftComponent},
+  {path: 'edithys/:id', component: EdithardysoftComponent}
 ];
 
 @NgModule({

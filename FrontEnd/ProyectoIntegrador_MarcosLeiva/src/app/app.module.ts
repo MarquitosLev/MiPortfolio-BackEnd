@@ -22,6 +22,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExpeComponent } from './components/experiencia/edit-expe.component';
 import { NeweducComponent } from './components/educacion/neweduc.component';
 import { EditeducComponent } from './components/educacion/editeduc.component';
+import { EdithardysoftComponent } from './components/hardysoft/edithardysoft.component';
+import { NewhardysoftComponent } from './components/hardysoft/newhardysoft.component';
  
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { EditeducComponent } from './components/educacion/editeduc.component';
     NewExperienciaComponent,
     EditExpeComponent,
     NeweducComponent,
-    EditeducComponent
+    EditeducComponent,
+    EdithardysoftComponent,
+    NewhardysoftComponent
   ],
   imports: [
     BrowserModule,
