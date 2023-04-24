@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ShardysoftService {
-  hysURL = "http://localhost:8080/hys/"
+  hysURL = "https://backend-portfolio-o88p.onrender.com/hys/"
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   // Base del url para luego concatenarlo 
-  URL = 'http://localhost:8080/persona'
+  URL = 'https://backend-portfolio-o88p.onrender.com/persona'
 
   constructor(private http: HttpClient) { }
 
