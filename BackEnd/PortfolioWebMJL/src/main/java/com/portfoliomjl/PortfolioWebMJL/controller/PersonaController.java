@@ -17,33 +17,34 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/persona")
 @CrossOrigin(origins = {"https://portfolio-frontend-mjl.web.app"})
 public class PersonaController {
 
     @Autowired
     IPersonaService iPersonaService;
 
-    @GetMapping("/persona/find")
+    @GetMapping("/find")
     public List<Persona> getPersonas() {
         return iPersonaService.getPersona();
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/personas/crear")
+    @PostMapping("/crear")
     public String createPersona(@RequestBody Persona persona) {
         iPersonaService.savePersona(persona);
         return "Persona creada";
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @DeleteMapping("/persona/borrar/{id}")
+    @DeleteMapping("/borrar/{id}")
     public String deletePersona(@PathVariable int id) {
         iPersonaService.deletePersona(id);
         return "Persona borrada";
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PutMapping("/persona/editar/{id}")
+    @PutMapping("/editar/{id}")
     public Persona editPersona(@PathVariable int id, @RequestParam("nombre") String newName, @RequestParam("apellido") String newLastN, @RequestParam("img") String newImg) {
         Persona pers = iPersonaService.findPersona(id);
         pers.setApellido(newLastN);

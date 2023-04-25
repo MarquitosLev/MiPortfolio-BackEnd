@@ -2,12 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Hardysoft } from '../model/hardysoft';
 import { Observable } from 'rxjs';
+import { environment } from '../environment/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShardysoftService {
-  hysURL = "https://backend-portfolio-o88p.onrender.com/hys/"
+  hysURL = environment.URL + "/hys/"
 
   constructor(private httpClient: HttpClient) { }
 
