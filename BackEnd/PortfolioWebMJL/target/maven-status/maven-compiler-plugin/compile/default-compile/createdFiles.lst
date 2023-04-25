@@ -5,6 +5,7 @@ com\portfoliomjl\PortfolioWebMJL\controller\PersonaController.class
 com\portfoliomjl\PortfolioWebMJL\entity\HyS.class
 com\portfoliomjl\PortfolioWebMJL\controller\EducacionController.class
 com\portfoliomjl\PortfolioWebMJL\Security\Controller\AuthController.class
+com\portfoliomjl\PortfolioWebMJL\Dto\DtoPersona.class
 com\portfoliomjl\PortfolioWebMJL\PortfolioWebMjlApplication.class
 com\portfoliomjl\PortfolioWebMJL\repository\REducacion.class
 com\portfoliomjl\PortfolioWebMJL\Security\jwt\JwtTokenFilter.class
@@ -17,7 +18,6 @@ com\portfoliomjl\PortfolioWebMJL\Security\Service\UserDetailsImp.class
 com\portfoliomjl\PortfolioWebMJL\repository\RHys.class
 com\portfoliomjl\PortfolioWebMJL\Security\Repository\iRolRepository.class
 com\portfoliomjl\PortfolioWebMJL\Dto\DtoExperiencia.class
-.netbeans_automatic_build
 com\portfoliomjl\PortfolioWebMJL\Security\Entity\Rol.class
 com\portfoliomjl\PortfolioWebMJL\entity\Experiencia.class
 com\portfoliomjl\PortfolioWebMJL\service\ImpPersonaService.class

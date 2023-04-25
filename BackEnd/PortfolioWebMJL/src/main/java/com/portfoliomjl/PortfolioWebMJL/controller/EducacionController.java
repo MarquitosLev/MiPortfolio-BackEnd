@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 //LOS MENTODOS SON SIMILARES AL DE EXPERIENCIA
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"https://portfolio-frontend-mjl.web.app"})
+@CrossOrigin(origins = {"https://portfolio-frontend-mjl.web.app", "http://localhost:4200"})
 public class EducacionController {
 
     @Autowired
