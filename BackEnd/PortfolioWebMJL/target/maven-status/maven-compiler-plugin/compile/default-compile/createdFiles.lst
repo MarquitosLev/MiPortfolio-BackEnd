@@ -3,6 +3,7 @@ com\portfoliomjl\PortfolioWebMJL\Security\Controller\MainSecurity.class
 com\portfoliomjl\PortfolioWebMJL\Security\Service\UsuarioService.class
 com\portfoliomjl\PortfolioWebMJL\controller\PersonaController.class
 com\portfoliomjl\PortfolioWebMJL\entity\HyS.class
+com\portfoliomjl\PortfolioWebMJL\entity\Proyecto.class
 com\portfoliomjl\PortfolioWebMJL\controller\EducacionController.class
 com\portfoliomjl\PortfolioWebMJL\Security\Controller\AuthController.class
 com\portfoliomjl\PortfolioWebMJL\Dto\DtoPersona.class
@@ -17,12 +18,15 @@ com\portfoliomjl\PortfolioWebMJL\Security\Dto\JwtDto.class
 com\portfoliomjl\PortfolioWebMJL\Security\Service\UserDetailsImp.class
 com\portfoliomjl\PortfolioWebMJL\repository\RHys.class
 com\portfoliomjl\PortfolioWebMJL\Security\Repository\iRolRepository.class
+com\portfoliomjl\PortfolioWebMJL\service\SProyecto.class
 com\portfoliomjl\PortfolioWebMJL\Dto\DtoExperiencia.class
+com\portfoliomjl\PortfolioWebMJL\Dto\DtoProyecto.class
 com\portfoliomjl\PortfolioWebMJL\Security\Entity\Rol.class
 com\portfoliomjl\PortfolioWebMJL\entity\Experiencia.class
 com\portfoliomjl\PortfolioWebMJL\service\ImpPersonaService.class
 com\portfoliomjl\PortfolioWebMJL\entity\Persona.class
 com\portfoliomjl\PortfolioWebMJL\repository\IPersonaRepository.class
+com\portfoliomjl\PortfolioWebMJL\controller\ProyectoController.class
 com\portfoliomjl\PortfolioWebMJL\service\SHys.class
 com\portfoliomjl\PortfolioWebMJL\Dto\DtoEducacion.class
 com\portfoliomjl\PortfolioWebMJL\Security\Dto\LoginUsuario.class
@@ -38,3 +42,4 @@ com\portfoliomjl\PortfolioWebMJL\Interface\IPersonaService.class
 com\portfoliomjl\PortfolioWebMJL\controller\ExperienciaController.class
 com\portfoliomjl\PortfolioWebMJL\service\SExperiencia.class
 com\portfoliomjl\PortfolioWebMJL\entity\Educacion.class
+com\portfoliomjl\PortfolioWebMJL\repository\RProyecto.class
